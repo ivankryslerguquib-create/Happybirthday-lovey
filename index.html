@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+
+    <!-- Background Video -->
+    <div class="background-video">
+        <video autoplay loop muted>
+            <source src="Download (10).mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Albums -->
+        <section class="album-section">
+            <h2>Featured Songs</h2>
+
+            <div class="album-cards">
+                <div class="album-card">
+                    <img src="fitterkarma.jpg" alt="">
+                    <h3>Kalapastangan</h3>
+                    <p>fitterkarma</p>
+                    <button class="play-card">▶</button>
+                </div>
+                <div class="album-card">
+                    <img src="Coldplay.jpg" alt="">
+                    <h3>Viva La Vida</h3>
+                    <p>Coldplay</p>
+                    <button class="play-card">▶</button>
+                </div>
+                <div class="album-card">
+                    <img src="ne-yo.jpg" alt="">
+                    <h3>Miss Independent</h3>
+                    <p>Ne-Yo</p>
+                    <button class="play-card">▶</button>
+                </div>
+                <div class="album-card">
+                    <img src="The 1975.jpg" alt="">
+                    <h3>About You</h3>
+                    <p>The 1975</p>
+                    <button class="play-card">▶</button>
+                </div>
+                <div class="album-card">
+                    <img src="arianagrande.jpg" alt="">
+                    <h3>Love Me Harder</h3>
+                    <p>Ariana grande</p>
+                    <button class="play-card">▶</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Music Player -->
+    <section class="music-player">
+        <div class="song-info">
+            <img src="5.jpg" id="cover">
+            <div>
+                <h4 id="title">Song Title</h4>
+                <p id="artist">Artist Name</p>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <button class="prev-btn">⏮</button>
+            <button class="play-btn">▶</button>
+            <button class="next-btn">⏭</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <input type="range" id="progress" value="0" min="0" max="100">
+    </section>
+
+    <audio id="audio"></audio>
+
+    <script src="music.js"></script>
+</body>
+</html>
